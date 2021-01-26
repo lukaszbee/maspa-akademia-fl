@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block head %}{% endblock %}
+{% block body %}
+    
+    <div id="logowanie-content">
+        <section>
+            <form action="" method="POST">
+                {{ form.hidden_tag() }}
+
+                <p> {{ form.nazwa.label() }}
+                    {{ form.nazwa() }}
+                </p>
+
+               <p>
+                {{ form.opis.label() }}
+                {{ form.opis() }}
+
+               </p>
+               <p>
+                {{ form.cena.label() }}
+                {{ form.cena() }}
+            </p>
+               <p>
+                {{ form.dodaj() }}
+               </p>
+                
+            </form>
+        </section>
+    </div>
+{% endblock %}

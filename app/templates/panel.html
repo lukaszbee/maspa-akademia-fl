@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% block head %}{% endblock %}
+{% block body %}
+    
+    tu bedzie panel admina!
+    <h1> obecnie zalogowany jest user : {{ current_user.user }} </h1>
+    <a href="{{ url_for('logout') }}"> WYLOGUJ SIE !!!</a>
+    <a href="{{ url_for('kursedit') }}">Dadaj nowt kurs</a>
+    
+    <h2>Lista aktualnych kursów :</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <td>ID</td>
+                <td>Nazwa</td>
+                <td>Opis</td>
+                <td>Cena</td>
+                <td>+</td>
+                <td>-</td>
+            </tr>     
+        </thead>
+        <tbody>
+            {% for kursy in kursy %}
+            <tr>
+                <td>{{ kursy.id }}</td>
+                <td>{{ kursy.nazwa }}</td>
+                <td>{{ kursy.opis }}</td>
+                <td>{{ kursy.cena }}</td>
+                <td><a href="/edit/{{ kursy.id }}">Edytuj</a></td>
+                <td><a href="/del/{{ kursy.id }}">Usun</a></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+
+    </table>
+{% endblock %}

@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block head %}{% endblock %}
+{% block body %}
+    <h1>tu beedzie strona z kursami</h1>
+
+    {% for kursy in kursy %}
+        <h2><a href="/kursdetal/{{ kursy.id }}">{{ kursy.opis }}</a></h2>
+    {% endfor %}
+{% endblock %}

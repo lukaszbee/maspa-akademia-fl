@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* base navigacja  */
+
+nav {
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    animation: zanikanie 2s linear;
+    
+}
+
+#menu {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav img {
+    height: 50%;
+
+}
+nav a {
+    text-decoration: none;
+    padding: 4px;
+    color: black;
+    font-size: x-large;
+}
+
+nav a:hover {
+    background-color: goldenrod;
+    color: white;
+}
+
+#social {
+    padding: 1px;
+    font-size: 20px;
+}
+
+@keyframes zanikanie {
+    0% {opacity: 0%;}
+    50% {opacity: 50%;}
+    100% {opacity: 100%;}
+}
+
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        height: 100vh;
+        justify-content: stretch;
+    }
+    #menu {
+        flex-direction: column;
+        justify-content: stretch;
+    }
+    nav img {
+        height: 20%;
+    }
+
+}
+
+/* index.html  */
+
+#index-content {
+    background-color: black;
+    color: goldenrod;
+    height: 85vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    
+    
+}
+
+ #index-content section {
+     padding: 2%;
+ }
+
+
+ /* strona do logowania  */
+
+ #logowanie-content {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+
+ }
+
+ #logowanie-content section {
+    display: flex;
+    width: 400px;
+    background-color: goldenrod;
+    color: black;
+    border-radius: 5px;
+    padding: 6px;
+
+}

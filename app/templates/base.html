@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   
+    <title>base html</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <!-- fontawesome  -->
+
+    <script src="https://kit.fontawesome.com/fd738c56a3.js" crossorigin="anonymous"></script>
+
+    {% block head  %}{% endblock %}
+
+</head>
+<body>
+    <nav>
+        <img src="{{ url_for('static', filename='maspa-AKADEMIA.png') }}" alt="">
+        <div id="menu">
+            <a href="{{ url_for('index') }}">home</a>
+            <a href="{{ url_for('kursypage') }}">kursy</a>
+            <a href="{{ url_for('trenerzy') }}">trenerzy</a>
+            <a href="{{ url_for('kontakt') }}">kontakt</a>
+            <a href="">zapytaj</a>
+        </div>
+        <div id="social">
+            <a href="https://www.facebook.com/MaspaOdnowaBiologiczna"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/maspagliwice/?hl=pl"><i class="fab fa-instagram"></i></a>
+            <i class="fas fa-envelope"></i>
+            <i class="fas fa-shopping-cart"></i>
+            
+        </div>
+    </nav>
+
+    {% block body %}{% endblock %}
+
+
+    
+</body>
+</html>

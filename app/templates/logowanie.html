@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block head %}{% endblock %}
+{% block body %}
+    
+    <div id="logowanie-content">
+        <section>
+            <form action="" method="POST">
+                {{ form.hidden_tag() }}
+
+                <p> {{ form.user.label() }}
+                    {{ form.user() }}
+                </p>
+
+               <p>
+                {{ form.haslo.label() }}
+                {{ form.haslo() }}
+
+               </p>
+               <p>
+                {{ form.pamietaj.label() }}
+                {{ form.pamietaj() }}
+            </p>
+               <p>
+                {{ form.zatwierdz() }}
+               </p>
+                
+                
+            </form>
+        </section>
+    </div>
+{% endblock %}
