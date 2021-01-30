@@ -1,9 +1,18 @@
 {% extends 'base.html' %}
 {% block head %}{% endblock %}
 {% block body %}
-    <h1>tu beedzie strona z kursami</h1>
+
+<div id="kursy-content">
+
+    <h1>Lista obecnych kursów : </h1>
 
     {% for kursy in kursy %}
-        <h2><a href="/kursdetal/{{ kursy.id }}">{{ kursy.opis }}</a></h2>
+        <h2><a href="/kursdetal/{{ kursy.id }}">{{ kursy.nazwa }}</a></h2>
     {% endfor %}
+
+
+</div>
+    
 {% endblock %}
+
+
