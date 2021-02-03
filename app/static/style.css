@@ -210,3 +210,22 @@ a:hover {
     }
 
 }
+
+#kontakt-content {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: black;
+    color: goldenrod;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px;
+}
+
+#kontakt-content a {
+    color: white;
+}
+
+#kontakt-content p {
+    margin: 5px;
+}
