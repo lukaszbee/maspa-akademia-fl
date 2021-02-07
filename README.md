@@ -22,3 +22,14 @@ dziala bez modulu :
     # if current_user.is_authenticated:
     #     return redirect(url_for('index'))
 <!-- nie wiem czemu  -->
+
+deploy na heroku.com 
+
+>wykonaj takie komendy:
+pip install gunicorn
+stwórz plik -- > Procfile
+a nastepnie dodaj tam taka linike kody
+web: gunicorn app:app
+
+stworz plik z requirements
+pip freeze > requirements.txt
