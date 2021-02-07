@@ -172,6 +172,9 @@ a:hover {
 
 }
 
+/* strona o trenerach  */
+
+
 #trenerzy-content {
     display: flex;
     flex-direction: row;
@@ -211,6 +214,9 @@ a:hover {
 
 }
 
+/* strona kontakty  */
+
+
 #kontakt-content {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: black;
@@ -229,3 +235,48 @@ a:hover {
 #kontakt-content p {
     margin: 5px;
 }
+
+
+/* panel admina */
+
+#pa-content {
+    background-color: black;
+    height: 85vh;
+    color: peachpuff;
+}
+
+#pa-content a {
+    color: white;
+}
+#pa-content p {
+    color: red;
+}
+
+#pa-content h1, h2 {
+    color: steelblue;
+}
+
+table {
+    padding: 10px;
+}
+
+@media (max-width: 600px) {
+    #pa-content {
+        width: 100%;
+        font-size: 20px;
+        height: 100%;
+        word-wrap: break-word;
+    }
+    #pa-content a {
+        font-size: 10px;
+        
+    }
+    table tr td {
+        display: flex;
+        flex-wrap: wrap;
+        word-wrap: break-word;
+    }
+    
+}
+    
+    
